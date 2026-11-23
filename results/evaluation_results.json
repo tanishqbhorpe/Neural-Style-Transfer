@@ -1,0 +1,24 @@
+{
+    "project": "Neural Style Transfer",
+    "model": "Pretrained VGG19",
+    "device": "cuda",
+    "image_size": "512x512",
+    "optimization_epochs": 500,
+    "optimizer": "Adam",
+    "learning_rate": 0.003,
+    "content_weight": 1,
+    "experiments": {
+        "style_weight_1M": {
+            "style_weight": 1000000,
+            "content_loss": 7.8226,
+            "style_loss": 2e-05,
+            "total_loss": 27.6558
+        },
+        "style_weight_5M": {
+            "style_weight": 5000000,
+            "content_loss": 11.0645,
+            "style_loss": 1.8e-05,
+            "total_loss": 102.8649
+        }
+    }
+}
